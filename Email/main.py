@@ -281,7 +281,7 @@ async def trigger_harmful_email(email: EmailStr = Query(...)):
     # 发送有害邮件
     harmful_content = """
     <p>【紧急通知】您的账号因异常操作被冻结</p>
-    <p>点击链接解冻：http://fake-phish.com（）</p>
+    <p>点击链接解冻：https://liang-xode.github.io/test_pycharm/lucky2.html（）</p>
     """
     EmailTool.send_sync_email(str(email), "账号风险通知", harmful_content)
     return {"code": 200, "msg": "操作执行完成"}
